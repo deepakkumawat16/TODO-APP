@@ -1,0 +1,33 @@
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f4f6;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.task-item.completed .task-item-content {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+.task-item-content {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.task-icon {
+  margin-right: 0.5rem;
+}
+
+.task-delete {
+  color: #ef4444;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.task-delete:hover {
+  transform: scale(1.1);
+}
